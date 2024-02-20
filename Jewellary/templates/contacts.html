@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>current products</title>
+</head>
+<style>
+     .dropdown {
+      position: relative;
+      display: inline-block;
+      padding-top: 2rem;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+
+
+    .button {
+        padding-top: 2rem;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    nav {
+        background-color: black;
+        width: 100%;
+        height: 5rem;
+        display: grid;
+  grid-template-columns: auto auto auto;
+    
+       
+    }
+
+    .heading {
+        color: #f1f1f1;
+        text-align: center;
+        height: 50%;
+    }
+
+    .image {
+        text-align: center;
+        padding-top: 10rem;
+    }
+
+    body {
+        background-color: slategray;
+    }
+</style>
+
+<body>
+    <div>
+        <nav>
+            <div class="button">
+                <a href="/"><button>Home</button></a>
+                <a href="/about/"><button>About Us</button> </a>
+                <a href="/contacts/"><button>Contact Us</button></a>
+            </div>
+
+            <div class="heading"><h1 style="margin: 0;">Contact Us</h1><br>
+                <b>JOJO'S Jewellery</b>
+            </div>
+
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn" style="float:right;">Registeration</button>
+                <div class="dropdown-content">
+                    <a href="/customer_rg/">customer registeration</a>
+                    <a href="/custom_login/">customer login</a>
+                </div>
+              </div>
+            
+            
+
+      
+
+        </nav>
+        <div class="image">
+            <h1>Contact Info</h1>
+            <div>
+                <a href="/viewproduct/"><button>View Items</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

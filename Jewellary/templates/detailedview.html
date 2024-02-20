@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+        background-color: slategray;
+    }
+    .form{
+        border-color: aliceblue;
+        border: 4px outset;
+        border-radius: 8px;
+        width: 26rem;
+        height: 34rem;
+        text-align: center;
+        margin-left: 330px;
+    }
+h1{
+    color: rgb(236, 236, 236);
+    text-decoration: wavy;
+    text-shadow: 2px 2px 4px #030303,0 0 25px blue,0 0 5px darkblue;
+}
+h3{
+    color: rgb(225, 224, 231);
+    text-shadow: 2px 2px 4px #030303,0 0 25px red,0 0 5px darkred;
+}
+.text{
+    color: rgb(10, 0, 20);
+    text-shadow: 2px 2px 4px #030303,0 0 25px violet,0 0 5px darkviolet;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="form">
+    <div><h1><b>PROFILE</b></h1></div>
+
+    <div style="display: inline-flex;">
+        <h3 class="text">First Name : </h3><h3>{{productsview.firstname}}</h3>
+    </div>
+<br>
+    <div style="display: inline-flex;">
+        <h3 class="text">Last Name : </h3><h3>{{productsview.lastname}}</h3>
+    </div>
+    <br>
+    <div style="display: inline-flex;">
+        <h3 class="text">Age : </h3><span><h3>{{productsview.age}}</h3></span>
+    </div>
+    <br>
+    <div style="display: inline-flex;">
+        <h3 class="text">Phone Number : </h3><span><h3>{{productsview.phone}}</h3></span>
+    </div>
+    <br>
+    <div style="display: inline-flex;">
+        <h3 class="text">Email : </h3><span><h3>{{productsview.email}}</h3></span>
+    </div>
+    <br>
+    <div style="display: inline-flex;">
+        <h3 class="text">Address : </h3><span><h3>{{productsview.address}}</h3></span>
+    </div>
+    <br>
+    <div style="display: inline-flex;">
+        <h3 class="text">Location : </h3><span><h3>{{productsview.location}}</h3></span>
+    </div>
+    <br>
+    <div style="display: inline-flex;">
+        <h3 class="text">User Name : </h3><span><h3>{{productsview.username}}</h3></span>
+    </div>
+    
+</div>
+    </div>
+</body>
+</html>

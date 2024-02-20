@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body {
+        background-color: slategray;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: darkblue; font-size: 4rem;">Customer Dashboard</h1>
+  <br>
+<br>
+<div style="text-align: center;">
+  <h2>ID : {{id}}</h2>
+<h2>User Name : {{username}}</h2>
+</div>
+<br>
+
+<div style="display: flex; gap: 3rem; justify-content: center;">
+  <div>
+    <b>Full Profile : </b><a href="{% url 'detailedview' id %}" style="text-decoration: none; color: rgb(2, 230, 70);">VIEW</a>
+  </div>
+  <div>
+   <b> Edit Your Profile : </b> <a href="{% url 'custom_update' id %}" style="text-decoration: none; color: rgb(0, 233, 70);">EDIT</a>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+    <div style="display: inline-flex;">
+      <h4>View available products :^</h4><span><a href="/viewproduct/"><button>View Products</button></a></span>
+    </div>
+   
+   
+
+
+    <div style="display: inline-flex; font-style: oblique; float:right;">
+      <b><p style="color: #080050; " >Logout here : </p></b><a href="/custom_logout/" style="color: #e8f71a; padding-top: 1rem; text-decoration: none;" >Logout</a>
+  </div>
+  
+</body>
+</html>

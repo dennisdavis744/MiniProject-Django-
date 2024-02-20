@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1{
+    color: rgba(255, 128, 0, 0.781);
+    text-align: center;
+}
+*{
+    background-color: darkgrey;
+}
+.one{
+    border: 2px inset indigo;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 235px;
+}
+</style>
+</head>
+<body>
+<div class="one">
+    {% for c in cart %}
+    <h1>{{c.itemname}}</h1>
+    <h1>{{c.price}}$</h1>
+    <img src="{{c.coverimage}}" alt="" height="300px" width="300px">
+    {% endfor %}
+</div>  
+</body> 
+</html>
